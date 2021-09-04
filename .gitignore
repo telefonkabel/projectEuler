@@ -1,0 +1,13 @@
+# Windows
+Thumbs.db
+
+# Applications
+*.app
+*.exe
+*.war
+*.o
+
+# VS
+.vs/
+Debug/
+Release/
