@@ -2,12 +2,15 @@
 #include "CProblem.h"
 
 
-class CProblem1 : public CProblem
+namespace euler
 {
-public:
-	CProblem1(int range);
+	class CProblem1 : public CProblem
+	{
+	public:
+		CProblem1(int  range);
 
-private:
-	void calculate() override;
-};
+	private:
+		void calculate() override;
+	};
 
+} //end of namespace euler

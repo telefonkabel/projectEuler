@@ -72,19 +72,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);problems;</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)/projectEuler;$(SolutionDir)/projectEuler/problems</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);problems;</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)/projectEuler;$(SolutionDir)/projectEuler/problems</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);problems;</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)/projectEuler;$(SolutionDir)/projectEuler/problems</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);problems;</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)/projectEuler;$(SolutionDir)/projectEuler/problems</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -144,14 +144,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="maths.cpp" />
     <ClCompile Include="problems\CProblem.cpp" />
     <ClCompile Include="problems\CProblem1.cpp" />
     <ClCompile Include="problems\CProblem2.cpp" />
+    <ClCompile Include="problems\CProblem3.cpp" />
+    <ClCompile Include="problems\CProblem69.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="maths.h" />
     <ClInclude Include="problems\CProblem.h" />
     <ClInclude Include="problems\CProblem1.h" />
     <ClInclude Include="problems\CProblem2.h" />
+    <ClInclude Include="problems\CProblem3.h" />
+    <ClInclude Include="problems\CProblem69.h" />
     <ClInclude Include="solvedProblems.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

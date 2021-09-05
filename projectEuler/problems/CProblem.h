@@ -1,19 +1,22 @@
 #pragma once
 
 
-class CProblem
+namespace euler
 {
-public:
-	CProblem(int id, int range);
+	class CProblem
+	{
+	public:
+		CProblem(int id, size_t range);
 
-	void solve();
+		void solve();
 
-protected:
-	int m_range;
-	int m_solution;
+	protected:
+		size_t m_range;
+		size_t  m_solution;
 
-private:
-	int m_id;
-	virtual void calculate() = 0;
-};
+	private:
+		int m_id;
+		virtual void calculate() = 0;
+	};
 
+} //end of namespace euler

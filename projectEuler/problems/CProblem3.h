@@ -1,13 +1,15 @@
 #pragma once
 #include "CProblem.h"
 
+#include <set>
+
 
 namespace euler
 {
-	class CProblem2 : public CProblem
+	class CProblem3 : public CProblem
 	{
 	public:
-		CProblem2(int  range);
+		CProblem3(size_t  range);
 
 	private:
 		void calculate() override;

@@ -6,13 +6,15 @@
 
 int main()
 {
-	std::vector<std::unique_ptr<CProblem>> probs;
+	std::vector<std::unique_ptr<euler::CProblem>> problems;
 	
-	probs.emplace_back(new CProblem1(1000));
-	probs.emplace_back(new CProblem2(4000000));
+	problems.emplace_back(new euler::CProblem1(1000));
+	problems.emplace_back(new euler::CProblem2(4000000));
+	problems.emplace_back(new euler::CProblem3(600851475143));
+	problems.emplace_back(new euler::CProblem69(1000000));
 
-	for (auto& prob : probs)
-		prob->solve();
+	for (auto& problem : problems)
+		problem->solve();
 
 	return 0;
 }
