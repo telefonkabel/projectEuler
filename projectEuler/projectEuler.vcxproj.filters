@@ -41,6 +41,9 @@
     <ClCompile Include="problems\CProblem3.cpp">
       <Filter>problems</Filter>
     </ClCompile>
+    <ClCompile Include="problems\CProblem357.cpp">
+      <Filter>problems</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="solvedProblems.h">
@@ -62,6 +65,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="problems\CProblem3.h">
+      <Filter>problems\header</Filter>
+    </ClInclude>
+    <ClInclude Include="problems\CProblem357.h">
       <Filter>problems\header</Filter>
     </ClInclude>
   </ItemGroup>

@@ -2,14 +2,15 @@
 #include "CProblem.h"
 
 #include <cstdint>
+#include <set>
 
 
 namespace euler
 {
-	class CProblem2 : public CProblem
+	class CProblem357 : public CProblem
 	{
 	public:
-		CProblem2(int64_t  range);
+		CProblem357(int64_t  range);
 
 	private:
 		void calculate() override;

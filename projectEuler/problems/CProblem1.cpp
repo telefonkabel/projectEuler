@@ -3,7 +3,7 @@
 
 namespace euler
 {
-	CProblem1::CProblem1(int  range) :
+	CProblem1::CProblem1(int64_t  range) :
 		CProblem{ 1, range }
 	{
 	}
@@ -11,10 +11,10 @@ namespace euler
 	void CProblem1::calculate()
 	{
 		////straight
-		//for (int i{ 0 }; i < range; ++i)
+		//for (int i{ 0 }; i < m_range; ++i)
 		//{
 		//	if (i % 3 == 0 || i % 5 == 0)
-		//		solution += i;
+		//		m_solution += i;
 		//}
 
 		////"short"

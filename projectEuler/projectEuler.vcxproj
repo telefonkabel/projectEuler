@@ -149,6 +149,7 @@
     <ClCompile Include="problems\CProblem1.cpp" />
     <ClCompile Include="problems\CProblem2.cpp" />
     <ClCompile Include="problems\CProblem3.cpp" />
+    <ClCompile Include="problems\CProblem357.cpp" />
     <ClCompile Include="problems\CProblem69.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +158,7 @@
     <ClInclude Include="problems\CProblem1.h" />
     <ClInclude Include="problems\CProblem2.h" />
     <ClInclude Include="problems\CProblem3.h" />
+    <ClInclude Include="problems\CProblem357.h" />
     <ClInclude Include="problems\CProblem69.h" />
     <ClInclude Include="solvedProblems.h" />
   </ItemGroup>

@@ -3,7 +3,7 @@
 
 namespace euler
 {
-	CProblem2::CProblem2(int  range) :
+	CProblem2::CProblem2(int64_t  range) :
 		CProblem(2, range)
 	{}
 

@@ -1,4 +1,5 @@
 #pragma once
+#include <cstdint>
 
 
 namespace euler
@@ -6,13 +7,13 @@ namespace euler
 	class CProblem
 	{
 	public:
-		CProblem(int id, size_t range);
+		CProblem(int id, int64_t range);
 
 		void solve();
 
 	protected:
-		size_t m_range;
-		size_t  m_solution;
+		int64_t m_range;
+		int64_t  m_solution;
 
 	private:
 		int m_id;

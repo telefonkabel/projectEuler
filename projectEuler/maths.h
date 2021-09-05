@@ -1,35 +1,21 @@
 #pragma once
+#include <cstdint>
 #include <set>
-#include <list>
-#include <map>
+#include <vector>
+
 
 namespace euler
 {
 	namespace maths
 	{
 		////related to primes
-		template <typename T>
-		std::set<T> primeFactors(T  number)
-		{
-			std::set<T> primes{};
-			for (T i{ 2 }; i <= number; ++i)
-			{
-				if (number % i == 0)
-				{
-					primes.insert(i);
-					while (number % i == 0)
-						number /= i;
-				}
-			}
+		std::vector<bool> createPrimeTable(int64_t number);
 
-			return primes;
-		}
+		int64_t primorial(int64_t number);
 
-		int phiFunction(int number);
+		bool isPrime(int64_t number);
 
-		int primorial(int number);
-
-		bool isPrime(int number);
+		std::set<int64_t> getDivisors(int64_t number);
 
 	} //end of namespace maths
 } //end of namespace euler

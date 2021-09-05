@@ -5,7 +5,7 @@
 
 namespace euler
 {
-	CProblem::CProblem(int id, size_t range) :
+	CProblem::CProblem(int id, int64_t range) :
 		m_id{ id },
 		m_range{ range },
 		m_solution{}
